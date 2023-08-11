@@ -14,6 +14,8 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	defer file.Close()
+
 	w2 := csv.NewWriter(file)
 	w2.Write([]string{"hoge", "fuga"})
 	w2.Flush()

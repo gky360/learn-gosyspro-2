@@ -10,5 +10,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	defer file.Close()
 	fmt.Fprintf(file, "%d, %s, %f\n", 1, "hoge", 2.0)
 }
