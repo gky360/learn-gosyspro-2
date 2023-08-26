@@ -69,7 +69,7 @@ func main() {
 		if current == len(sendMessages) {
 			break
 		}
-		time.Sleep(6 * time.Second)
+		time.Sleep(1 * time.Second)
 	}
 	conn.Close()
 }
